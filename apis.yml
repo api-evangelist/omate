@@ -1,7 +1,27 @@
 aid: omate
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/omate.png
 name: Omate
-description: Omate is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Omate designs and manufactures Wearable-as-a-Service (WaaS) safety solutions
+  built around cellular-connected smartwatches for people who need protection —
+  seniors, children, and lone workers. Its devices (such as the O6L Pro line,
+  marketed under the Omahome brand) combine GPS location tracking, SOS calling,
+  fall detection, and two-way voice into a managed hardware-plus-service
+  offering sold direct to consumers and through partners. Omate is a hardware
+  and connected-device company; as of this profile it exposes no public
+  developer program, API, or SDK. This entry was surfaced as a 500 Global
+  portfolio lead and enriched with an identity and domain-security pass.
 url: https://raw.githubusercontent.com/api-evangelist/omate/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Wearables
+- Smartwatch
+- IoT
+- Connected Devices
+- Safety
+- Health
+- Elderly Care
+- GPS Tracking
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/omate-domain-security.yml
 - type: Website
   url: https://omate.com
+- type: TermsOfService
+  url: https://www.omate.com/terms-and-conditions/
+- type: Support
+  url: https://www.omate.com/contact/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
